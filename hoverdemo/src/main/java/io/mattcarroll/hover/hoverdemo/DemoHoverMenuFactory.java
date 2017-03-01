@@ -33,7 +33,6 @@ import io.mattcarroll.hover.defaulthovermenu.menus.MenuListNavigatorContent;
 import io.mattcarroll.hover.defaulthovermenu.menus.ShowSubmenuMenuAction;
 import io.mattcarroll.hover.defaulthovermenu.toolbar.ToolbarNavigatorContent;
 import io.mattcarroll.hover.hoverdemo.appstate.AppStateNavigatorContent;
-import io.mattcarroll.hover.hoverdemo.colorselection.ColorSelectionNavigatorContent;
 import io.mattcarroll.hover.hoverdemo.introduction.HoverIntroductionNavigatorContent;
 import io.mattcarroll.hover.hoverdemo.placeholder.PlaceholderNavigatorContent;
 import io.mattcarroll.hover.hoverdemo.theming.HoverThemeManager;
@@ -72,7 +71,7 @@ public class DemoHoverMenuFactory {
 
         Map<String, NavigatorContent> demoMenu = new LinkedHashMap<>();
         demoMenu.put(DemoHoverMenuAdapter.INTRO_ID, new HoverIntroductionNavigatorContent(context, Bus.getInstance()));
-        demoMenu.put(DemoHoverMenuAdapter.SELECT_COLOR_ID, new ColorSelectionNavigatorContent(context, Bus.getInstance(), HoverThemeManager.getInstance(), HoverThemeManager.getInstance().getTheme()));
+        //demoMenu.put(DemoHoverMenuAdapter.SELECT_COLOR_ID, new ColorSelectionNavigatorContent(context, Bus.getInstance(), HoverThemeManager.getInstance(), HoverThemeManager.getInstance().getTheme()));
         demoMenu.put(DemoHoverMenuAdapter.APP_STATE_ID, new AppStateNavigatorContent(context));
         demoMenu.put(DemoHoverMenuAdapter.MENU_ID, toolbarNavigatorContent);
         demoMenu.put(DemoHoverMenuAdapter.PLACEHOLDER_ID, new PlaceholderNavigatorContent(context, bus));

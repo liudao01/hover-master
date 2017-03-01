@@ -43,6 +43,10 @@ public class AppStateTracker {
         sInstance = new AppStateTracker(application, bus);
     }
 
+    /**
+     * 获取app状态快照
+     * @return
+     */
     public static AppStateTracker getInstance() {
         if (null == sInstance) {
             throw new RuntimeException("Did you forget to call init()? You must initialize AppStateTracker before obtaining its instance.");
